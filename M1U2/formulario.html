@@ -1,0 +1,71 @@
+<form action="" method="">
+    <!-- label: se utiliza para asociar un texto descriptivo con un elemento de formulario-->
+    <!-- for: especifica el id del elemento del formulario al que se está asociando este texto-->
+    <p>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre"/>
+    </p>
+    <!--input: se utiliza para crear un control de entrada en un formulario-->
+    <!--type="text": indica que se trata de un campo de texto de una línea-->
+    <p>
+        <input type="text" name="apellido" placeholder="apellido" />
+        <!--atributo "placeholder": muestra un texto de marcador de posición dentro del campo de texto antes de que el usuario escriba algo.-->
+    </p>
+    <p>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass"/>
+        <!--type="password": indica que es un campo de entrada para contraseñas-->
+    </p>
+    <label for="sexo">Sexo</label>
+    <ul>
+        <li>
+            <input type="radio" name="sexo" value="hombre"/>
+            <label>Hombre</label>
+        </li>
+        <li>
+            <input type="radio" name="sexo" value="mujer"/>
+            <label>Mujer</label>
+        </li>
+    </ul>
+    <label> Hobbies </label>
+    <ul>
+        <!--type="checkbox": especifica que es una casilla de verificación-->
+        <li>
+            <input type="checkbox" name="hobbies[]" value="bailar" id="bailar"/>
+            <label for="bailar">Bailar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="cantar" id="cantar"/>
+            <label for="cantar">Cantar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="nadar" id="nadar"/>
+            <label for="nadar">Nadar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="correr" id="correr"/>
+            <label for="correrr">Correr</label>
+        </li>
+    </ul>
+    <p>
+        <label for="titulo">Titulo</label>
+        <!--select: crea un campo de selección-->
+        <select name="titulo">
+            <option value="primario">Primario</option>
+            <option value="secundario">Secundario</option>
+            <option value="terciario">Terciario</option>
+            <option value="universitario">Universitario</option>
+        </select>
+    </p>
+    <p>
+        <!--textarea: crea un área de texto de múltiples líneas donde el usuario puede ingresar comentarios-->
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentarios"></textarea>
+    </p>
+    <!--<input type="submit" value="Enviar"/>: Crea un botón de envío que el usuario puede hacer clic para enviar el formulario.-->
+    <!--<input type="reset" value="Borrar"/>: Crea un botón de reinicio que el usuario puede hacer clic para restablecer los valores del formulario.-->
+    <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+    </p>
+</form>
