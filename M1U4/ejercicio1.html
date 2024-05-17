@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        //Escribir el código necesario para que dada una distancia determine el medio de transporte apropiado de acuerdo a las siguientes reglas:
+        //0 a 1000 metros = pie
+        //1000 a 10000 metros = bicicleta
+        //10000 a 30000 metros = colectivo
+        //30000 a 100000 metros = auto
+        //+100000 = avión
+
+        const distancia = parseInt(prompt('Ingrese una distancia:', '')); 
+
+        if (isNaN(distancia)) {
+            document.write('<br>Por favor, ingrese un número válido.');
+        } else if (distancia >= 0 && distancia <= 1000) {
+			document.write(`<br>El medio de transporte apropiado de acuerdo a ${distancia} metros es: pie.`);
+		} else if (distancia > 1000 && distancia <= 10000) {
+			document.write(`<br>El medio de transporte apropiado de acuerdo a ${distancia} metros es: bicicleta.`);
+		} else if (distancia > 10000 && distancia <= 30000){
+			document.write(`<br>El medio de transporte apropiado de acuerdo a ${distancia} metros es: colectivo.`);
+		} else if (distancia > 30000 && distancia <= 100000){
+			document.write(`<br>El medio de transporte apropiado de acuerdo a ${distancia} metros es: auto.`);
+        }else if (distancia > 100000){
+            document.write(`<br>El medio de transporte apropiado de acuerdo a ${distancia} metros es: avión.`);
+		}else {
+            document.write(`<br>Distancia no válida.`);
+        }
+
+    </script>
+</body>
+</html>

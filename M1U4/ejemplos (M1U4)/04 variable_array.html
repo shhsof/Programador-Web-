@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+	<script>
+		const frutas = ["Manzana", "Banana", "Pera", "Sandia"];
+
+		// Imprimimos la longitud del array 'frutas'
+		console.log(frutas.length); // 4
+		// Imprimimos el array completo.
+		console.log(frutas); 
+		
+		const primero = frutas[0]; // "Manzana"
+		
+		// Accedemos al último elemento del array 'frutas' utilizando 'frutas.length - 1'.
+		const ultimo = frutas[frutas.length-1]; // "Sandia" (siempre es el ultimo)
+
+		const vegetales = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria'];
+		
+		// Imprimimos el array completo 'vegetales'.
+		console.log(vegetales);  // ["Repollo", "Nabo", "Rábano", "Zanahoria"]
+		
+		let seleccionado = 2;
+		// Imprimimos el elemento del array 'vegetales' en el índice 2 (tercer elemento).
+		console.log(vegetales[seleccionado]); // "Rábano"
+		
+		// Cambiamos el valor de 'seleccionado' a 1.
+		seleccionado = 1;
+		console.log(vegetales[seleccionado]); // "Nabo"
+		
+		// Recorremos el array 'vegetales' utilizando un bucle 'for'.
+		for( let i = 0; i < vegetales.length; i++){
+			console.log('tenemos ' + vegetales[i])
+		}
+		
+		
+
+	</script>
+
+</body>
+</html>
