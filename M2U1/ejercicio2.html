@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+        .cuadro {
+            width: 220px;
+            height: 170px;
+            border-width: 5px;
+            border-color: rgb(255, 191, 238);
+        }
+
+        .contador {
+            font-size: 18px;
+            color: rgb(246, 124, 210);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="">
+        <p>
+            <textarea class="cuadro" name="comentarios"></textarea>
+        </p>
+        <p class="contador">Caracteres: </p>
+    </form>
+
+    <script>
+        const cuadro = document.querySelector('.cuadro');
+        const contador = document.querySelector('.contador');
+
+        cuadro.addEventListener('input', function () {
+            contador.textContent = `Caracteres: ${cuadro.value.length}`;
+            //El evento "input' se activa cada vez que cambia el contenido del "textarea".
+            //"cuadro.value.length" obtiene la longitud del texto.
+        });
+    </script>
+
+</body>
+
+</html>
