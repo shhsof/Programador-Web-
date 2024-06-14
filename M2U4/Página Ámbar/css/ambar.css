@@ -1,0 +1,236 @@
+body {
+    padding-top: 117px !important; /* Valor según la altura de las navbars */
+}
+#navbarBuscador {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 1030 !important; /* Valor alto para asegurar que quede sobre otros elementos */
+}
+#navbarCategorias {
+    position: fixed !important;
+    top: 60px !important; /* Ajusta este valor según la altura de tu primera navbar */
+    width: 100% !important;
+    z-index: 1029 !important; /* Menor que el primer navbar para asegurar que quede abajo */
+}
+.bordesnav{
+    margin: 0px !important;
+    background-color: #FFFFFF !important;
+}
+.bordescontainer{
+    margin: 0px !important;
+    background-color: #FFFFFF !important;
+}
+.buscador{
+    border-color: #FC6FB1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #FC6FB1;
+}
+.buscador:hover .bi {
+    color: #ffffff; /* Color del ícono al hacer hover */
+}
+.buscador:hover {
+    background-color: #FC6FB1;
+    border-color: #FC6FB1;
+}
+.icono {
+    color: #000000; 
+    border: none; 
+    background: none;
+    padding: 0; /* Elimina el fondo y el borde del botón */
+    font-size: 2rem; /* Ajusta el tamaño */
+}
+.icono:hover .bi {
+    color: #FC6FB1;
+}
+.margen{
+    padding-left: 0.8px; /* Ajusta el margen izquierdo */
+    padding-right: 0.8px; /* Ajusta el margen derecho */
+}
+.product {
+    text-align: center;
+    position: relative; /* Para posicionar el botón de manera absoluta */
+}
+.product img {
+    width: 100%;
+    height: auto;
+    margin-left: 1px !important;
+    display: block;
+}
+.product .description {
+    margin-top: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product .precio {
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.product .image-container {
+    position: relative;
+}
+/* Estilos del botón "Añadir al carrito" */
+.add-to-cart {
+    display: none; /* Inicialmente oculto */
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100%; /* Hacer que el botón tenga el mismo ancho que la imagen */
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0; /* Posicionar en la parte baja */
+    left: 0; /* Centrado horizontalmente */
+    padding: 4px;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transiciones suaves */
+    opacity: 0; /* Inicialmente transparente */
+}
+/* Mostrar el botón al hacer hover sobre el producto */
+.product:hover .add-to-cart {
+    display: block;
+    opacity: 1; /* Hacer el botón opaco */
+    z-index: 1;
+}
+/* Mostrar la imagen con tonos grises al hacer hover sobre esta */
+.filtro:hover {
+    filter: grayscale(20%);
+    transition: all .2s ease-in-out;
+    opacity: 0.7;
+}
+
+/* Modal de Suscripción */
+.modalsus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.modal-header .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+.modal-content {
+    background-color: #ffffff;
+    max-width: 90%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    max-width: 80%; 
+    margin: auto;
+}
+.modal-body {
+    padding: 10px;
+}
+.modal-footer {
+    justify-content: center;
+    border-top: none;
+    padding: 5px;
+}
+.modal-footer button {
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.modal-footer button:hover {
+    background-color: #000000;
+}
+
+/* Suscribite al Newsletter */
+
+.destacado4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 60px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+}
+.destacado4 h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+.destacado4 p{
+    font-size: 16px;
+}
+.destacado4 button {
+    padding: 8px 8px;
+    font-size: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 15%;
+}
+.destacado4 button:hover {
+    background-color: #787575;
+    color: #000000;
+}
+
+/* Formulario */
+.margen1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.destacado{
+    font-weight: bold;
+}
+.formulario{
+    color: #787575;
+}
+.check{
+    color: #606060;
+    font-size: 14px;
+    font-family: Times, serif;
+}
+/* Estilo de entrada */
+.underline-input {
+    border: none;
+    border-bottom: 1px solid #787575;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+}
+.underline-input:focus {
+    border-bottom: 2px solid #FC6FB1;
+    outline: none;
+}
+
+
+.destacado1{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #A6A6A6;
+    transition: color 0.3s ease;
+}
+.destacado2{
+    color: #000000;
+    font-family: montserrat;
+    font-size: 12px;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
