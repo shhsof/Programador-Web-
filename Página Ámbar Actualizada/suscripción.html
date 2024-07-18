@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribite al Newsletter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ambar.css">
+</head>
+
+<body>
+     <!-- Navbar -->
+     <nav class="navbar bordesnav bg-body-tertiary" id="navbarBuscador">
+        <div class="container-fluid bordescontainer">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Img/ambar.png" alt="Ámbar" width="100px" height="48px" class="d-inline-block align-text-top">
+            </a>
+            <!-- Formulario de búsqueda -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                <button class="btn btn-outline-success buscador" type="submit"><i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <!-- Lista de categorías -->
+    <nav class="navbar bordesnav navbar-expand-lg bg-body-tertiary" id="navbarCategorias">
+        <div class="container-fluid bordescontainer">
+            <button class="navbar-toggler icono" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="bi bi-justify"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="nuevo.html">NUEVO!</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">ACCESORIOS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="carterasMochilas.html">CARTERAS Y MOCHILAS</a></li>
+                            <li><a class="dropdown-item" href="bijou.html">BIJOU</a></li>
+                            <li><a class="dropdown-item" href="accesoriosPelo.html">ACCESORIOS DE PELO</a></li>
+                            <li><a class="dropdown-item" href="accesoriosTextiles.html">ACCESORIOS TEXTILES</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="accesorios.html" style="color: #FC6FB1;">VER TODO</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">BEAUTY
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="skincare.html">CUIDADO DE LA PIEL</a></li>
+                            <li><a class="dropdown-item" href="makeup.html">MAKEUP</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="beauty.html" style="color: #FC6FB1;">VER TODO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">INFANTIL
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="gorrosPilusos.html">GORROS Y PILUSOS</a></li>
+                            <li><a class="dropdown-item" href="librería.html">LIBRERÍA</a></li>
+                            <li><a class="dropdown-item" href="accesoriosInfantiles.html">ACCESORIOS INFANTILES</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="theKidsShop.html" style="color: #FC6FB1;">VER TODO</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="rebajas.html"
+                            style="color: #FC6FB1;">REBAJAS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Lista de categorías -->
+
+    <!-- Contenido del sitio -->
+    <div class="container-fluid content">
+        <img src="Img/suscripción2.jpg" class="d-block w-100" alt="Flyer Suscripción"><br><br>
+
+        <!-- Formulario Suscripción -->
+        <div class="container">
+            <div class="row margen1">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h2 class="destacado">¡Suscribite y recibí un 15% off!</h2><br>
+                    <p>Completá tus datos para suscribirte al Newsletter, obtené un <span class="destacado">15% off!</span> en tu próxima <br>
+                        compra y canjeá el descuento en el Shop Online o Tiendas Físicas / WhatsApp. <br>
+                        ¡Accedé a nuestras novedades, promos y lanzamientos exclusivos!</p><br>
+                    <form class="row g-3">
+                        <div class="col-md-12 formulario">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control underline-input" id="nombre" required>
+                        </div>
+                        <div class="col-md-12 formulario">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control underline-input" id="apellido" required>
+                        </div>
+                        <div class="col-md-12 formulario">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control underline-input" id="email" required>
+                        </div>
+                        <div class="col-md-12 formulario">
+                            <label for="number" class="form-label">Documento</label>
+                            <input type="number" class="form-control underline-input" id="documento" required>
+                        </div>
+                        <div class="col-12 check">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Acepto recibir información por Email sobre novedades, ofertas, descuentos, <br>
+                                    promociones y eventos.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-10 margen1"></div>
+                        <div class="col-2 margen1">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
