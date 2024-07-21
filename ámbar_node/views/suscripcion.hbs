@@ -1,0 +1,58 @@
+<!-- Contenido del sitio -->
+<div class="container-fluid content">
+    <img src="Img/suscripción2.jpg" class="d-block w-100" alt="Flyer Suscripción"><br><br>
+
+    <!-- Formulario Suscripción -->
+    <div class="container">
+        <div class="row margen1">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2 class="destacado">¡Suscribite y recibí un 15% off!</h2><br>
+                <p>Completá tus datos para suscribirte al Newsletter, obtené un <span class="destacado">15% off!</span>
+                    en tu próxima <br>
+                    compra y canjeá el descuento en el Shop Online o Tiendas Físicas / WhatsApp. <br>
+                    ¡Accedé a nuestras novedades, promos y lanzamientos exclusivos!</p><br>
+                {{#if message}}
+                <div class="alert alert-info alert-custom">{{message}}</div>
+                {{/if}}
+                <br>
+                <form class="row g-3" action="/suscripcion" method="post">
+                    <div class="col-md-12 formulario">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control underline-input" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col-md-12 formulario">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control underline-input" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="col-md-12 formulario">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control underline-input" id="email" name="email" required>
+                    </div>
+                    <div class="col-md-12 formulario">
+                        <label for="number" class="form-label">Documento</label>
+                        <input type="number" class="form-control underline-input" id="documento" name="documento"
+                            required>
+                    </div>
+                    <div class="col-12 check">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" name="check">
+                            <label class="form-check-label" for="gridCheck">
+                                Acepto recibir información por Email sobre novedades, ofertas, descuentos, <br>
+                                promociones y eventos.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-10 margen1"></div>
+                    <div class="col-2 margen1">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+</div>
+
+<br>
