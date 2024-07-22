@@ -6,7 +6,7 @@ var router = express.Router();
 var nodemailer = require('nodemailer')
 
 /* GET home page. */
-router.get('/index', function (req, res, next) {
+router.get('/', function (req, res, next) {
   res.render('index', { title: 'Ámbar', isIndexPage: true, isSuscripcionPage: false });
 });
 
