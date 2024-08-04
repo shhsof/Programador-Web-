@@ -11,7 +11,6 @@ router.get('/', function (req, res, next) {
 });
 
 /* POST contacto */
-
 router.post('/', async (req, res, next) => {
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
@@ -39,10 +38,13 @@ router.post('/', async (req, res, next) => {
   var info = await transporter.sendMail(obj);
   console.log('Mensaje enviado: %s', info.messageId);
 
-  res.render('index', {
-    title: 'Ámbar',
-    isIndexPage: true,
-    isSuscripcionPage: false,
+  const refererUrl = req.header('Referer');
+  const viewName = refererUrl ? refererUrl.split('/').pop() : 'index'; // Extrae el nombre de la vista desde la URL o usa 'index'
+
+  res.render(viewName, { // Renderiza la misma URL desde donde se hizo la solicitud
+    title: viewName.charAt(0).toUpperCase() + viewName.slice(1), // Asigna un título basado en la vista
+    isIndexPage: viewName === 'index',
+    isSuscripcionPage: viewName === 'suscripcion',
     message: 'Mensaje enviado correctamente',
   });
 }); //cierra peticion del POST

@@ -1,0 +1,42 @@
+<!-- Contenido del sitio -->
+<div class="container-fluid content">
+    <img src="/Img/login.jpg" class="d-block w-100" alt="Flyer Login"><br><br>
+    {{#if error}}
+    <div class="alert alert-info alert-custom1">El inicio de sesión de la cuenta fue incorrecto. Por favor revisa tu
+        email y/o contraseña.</div>
+    {{/if}}
+    <br>
+
+    <!-- Formulario Login -->
+    <div class="container">
+        <div class="row margen1">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h2 class="destacado">Iniciar sesión</h2><br>
+                <br>
+                <form class="row g-3" action="/admin/login" method="post">
+                    <div class="form-group formulario">
+                        <label for="usuario" class="form-label">Usuario</label>
+                        <input type="text" class="form-control underline-input" id="usuario"
+                            aria-describedby="emailHelp" name="usuario" required>
+                    </div>
+                    <div class="form-group formulario">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control underline-input" id="password" name="password"
+                            required>
+                    </div>
+                    <div class="col-10 margen1"></div>
+                    <div class="col-2 margen1">
+                        <br>
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+
+</div>
+
+<br>

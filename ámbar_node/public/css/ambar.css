@@ -259,15 +259,24 @@ body {
     font-size: 14px;
     font-family: Times, serif;
 }
-.margen1 button{
+.margen1 button,
+.margen1 a{
     background-color: #FC6FB1;
     border: 0px;
 }
-.margen1 button:hover{
+.margen1 button:hover,
+.margen1 a:hover{
     background-color: #ff88bf !important;
 }
 
 /* Estilo de entrada */
+.form-label {
+    color: #787575; /* Gris */
+    transition: color 0.3s ease;
+}
+.form-label.has-content {
+    color: #000000;
+}
 .underline-input {
     border: none;
     border-bottom: 1px solid #787575;
@@ -275,10 +284,18 @@ body {
     box-shadow: none;
     outline: none;
     width: 100%;
+    color: #787575;
+}
+.underline-input::placeholder {
+    color: #787575;
 }
 .underline-input:focus {
     border-bottom: 2px solid #FC6FB1;
     outline: none;
+}
+.underline-input:focus + .form-label,
+.underline-input:not(:placeholder-shown) + .form-label {
+    color: #000000;
 }
 
 
@@ -288,11 +305,20 @@ body {
     box-shadow: none;
     outline: none;
     width: 100%;
+    color: #787575;
+}
+.underline-input2::placeholder {
+    color: #787575;
 }
 .underline-input2:focus {
     border-bottom: 2px solid #FC6FB1;
     outline: none;
 }
+.underline-input2:focus + .form-label,
+.underline-input2:not(:placeholder-shown) + .form-label {
+    color: #000000;
+}
+
 .destacados{
     display: block;
     margin-bottom: 10px;
@@ -389,7 +415,47 @@ body {
 
 /* Alerta Suscripción */
 .alert-custom {
-    background-color: #ffeafc !important;; /* Color de fondo rosa */
-    color: #f762a8 !important;; /* Color del texto */
-    border-color: #f7d0f1 !important;; /* Color del borde */
-  }
+    background-color: #ffeafc !important; /* Color de fondo rosa */
+    color: #f762a8 !important; /* Color del texto */
+    border-color: #f7d0f1 !important; /* Color del borde */
+}
+
+/* Botón de login */
+.login-icon {
+    color: #8f8f8f;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    border-radius: 100%;
+    font-size: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.login-icon:hover {
+    color: #878787;
+}
+
+/* Botón de login 2*/
+.login2-icon {
+    color: #FC6FB1;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    border-radius: 100%;
+    font-size: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.login2-icon:hover {
+    color: #ff90c4;
+}
+
+.mensaje1 {
+    color: #FF69B4; /* Rosa */
+    font-weight: bold;
+}
+
+/* Alerta Login Incorrecto */
+.alert-custom1 {
+    background-color: #ffe5eb !important;
+    color: #ff587f !important;
+    border-color: #ffc9d2 !important;
+}

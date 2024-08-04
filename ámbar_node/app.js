@@ -5,9 +5,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
-// var usersRouter = require('./routes/users'); // No necesario si no usas usersRouter
+// var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/admin/login');
+
+var adminRouter = require('./routes/admin/novedades');
+const async = require('hbs/lib/async');
 
 var app = express();
 
@@ -21,8 +26,32 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use(session({
+  secret: '12w45qe1qe4q1eq54eq5',
+  resave: false,
+  saveUninitialized: true
+}))
+
+// Middleware para proteger rutas
+secured = async (req, res, next) => {
+  try {
+      console.log(req.session.id_usuario);
+      if (req.session.id_usuario) {
+        next();
+      } else {
+          res.redirect('/admin/login')
+      } //cierre else
+  } catch (error) {
+      console.log(error);
+  }
+}
+
 // Usar el enrutador para manejar rutas
 app.use('/', indexRouter);
+// app.use('/users', usersRouter);
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
