@@ -1,0 +1,247 @@
+<!-- Contenido del sitio -->
+<div class="container-fluid content">
+
+    <!-- Banner -->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <div class="col margen">
+                <a href="/smileyWorld" target="_self">
+                    <img src="Img/bannerSmiley.jpg" class="d-block w-100 filtro" alt="Banner Smiley World">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Productos Smiley Fila 1-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-3 margen">
+                <!-- figure: encapsula la figura, estructura visualmente el contenido. -->
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/MochilaSmiley1.jpg" class="d-block w-100"
+                                alt="Mochila con cierre smileyworld">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="89">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <!-- figcaption: proporciona una descripción asociada a la figura -->
+                    <figcaption class="description">Mochila con cierre "smileyworld®"<br>
+                        <span class="precio">$&nbsp;38.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BolsaSmiley1.jpg" class="d-block w-100" alt="Bolsa reutilizable Smileyworld">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="90">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bolsa reutilizable "smileyworld®"<br>
+                        <span class="precio">$&nbsp;15.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/MochilaSmiley2.jpg" class="d-block w-100"
+                                alt="Mochila con cierre smileyworld 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="91">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Mochila con cierre "smileyworld®"<br>
+                        <span class="precio">$&nbsp;38.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/MochilaSmiley3.jpg" class="d-block w-100"
+                                alt="Mochila con cierre smileyworld 3">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="92">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Mochila con cierre "smileyworld®"<br>
+                        <span class="precio">$&nbsp;38.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 1 -->
+
+
+    <!-- Productos Smiley Fila 2-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 5 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BilleteraSmiley.jpg" class="d-block w-100" alt="Billetera con cierre Smiley">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="93">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Billetera con cierre "smileyworld®"<br>
+                        <span class="precio">$&nbsp;15.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BolsaSmiley2.jpg" class="d-block w-100"
+                                alt="Bolsa reutilizable Smileyworld 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="94">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bolsa reutilizable "smileyworld®"<br>
+                        <span class="precio">$&nbsp;15.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 7 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/PortaCosméticosSmiley.jpg" class="d-block w-100"
+                                alt="Porta cosméticos Smiley">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="95">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Porta cosméticos "smileyworld®"<br>
+                        <span class="precio">$&nbsp;15.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 8 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BilleteraSmiley2.jpg" class="d-block w-100"
+                                alt="Billetera con cierre Smiley 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="96">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Billetera con cierre "smileyworld®"<br>
+                        <span class="precio">$&nbsp;15.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 2 -->
+
+</div> <!-- Fin Contenedor del sitio -->
+
+<br>
+<br>

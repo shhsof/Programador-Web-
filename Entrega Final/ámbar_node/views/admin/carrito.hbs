@@ -1,0 +1,111 @@
+<!-- Contenido del sitio -->
+<div class="container-fluid content">
+    <img src="/Img/carrito1.jpg" class="d-block w-100" alt="Flyer carrito"><br><br>
+    <div class="alert alert-info alert-custom">Hola {{persona}}, Gracias por ingresar a Ámbar Argentina.
+    </div>
+    <br>
+
+    <!-- Fila 1 -->
+    <div class="container">
+        <div class="row margen1">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="d-flex destacado6">
+                    <h3>Ahora podés acceder y agregar productos al carrito.</h3>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div> <!-- Fin Fila 1 -->
+
+    <br>
+
+    <!-- Fila 2 -->
+    <div class="container">
+        <div class="row margen1">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="d-flex destacado6">
+                    <h1><i class="bi bi-cart3"></i> Mi carrito</h1>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div> <!-- Fin Fila 2 -->
+
+    <!-- Fila 3 -->
+    <div class="container">
+        <div class="row margen1">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Total</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each carrito}}
+                        <tr>
+                            <td>{{nombre}}</td>
+                            <td>$&nbsp;{{precio}}</td>
+                            <td>
+                                <form action="/admin/carrito/actualizar/{{id}}" method="post" class="margens1"
+                                    style="display:inline;">
+                                    <input type="hidden" name="action" value="decrease">
+                                    <button type="submit">-</button>
+                                </form>
+                                {{cantidad}}
+                                <form action="/admin/carrito/actualizar/{{id}}" method="post" class="margens1"
+                                    style="display:inline;">
+                                    <input type="hidden" name="action" value="increase">
+                                    <button type="submit">+</button>
+                                </form>
+                            </td>
+                            <td>$&nbsp;{{total}}</td>
+                            <td>
+                                <a href="/admin/carrito/eliminar/{{id}}" class="btn btn-primary trash-icon">
+                                    <i class="bi bi-trash3"></i></a>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-end">
+                    <h3>Total: $&nbsp;{{total}}</h3>
+                </div>
+            </div>
+
+            <div class="col-1"></div>
+        </div>
+    </div> <!-- Fin Fila 3 -->
+
+    <br>
+    <br>
+    <hr style="border: 1px solid #767676; margin: 20px 0;">
+
+
+    <!-- Fila 4 -->
+    <div class="container">
+        <div class="row margen1">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="d-flex destacados6 justify-content-between align-items-center">
+                    <h3>{{persona}}, ¿Deseas cerrar la sesión? </h3>
+                    <br>
+                    <div class="margen2">
+                        <a href="/admin/login/logout" class="btn btn-primary">Cerrar sesión
+                            <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div> <!-- Fin Fila 4 -->
+</div>
+
+<br>

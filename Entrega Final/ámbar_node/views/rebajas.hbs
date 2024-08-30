@@ -1,0 +1,249 @@
+<!-- Contenido del sitio -->
+<div class="container-fluid content">
+
+    <!-- Banner -->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <div class="col margen">
+                <a href="/rebajas" target="_self">
+                    <img src="Img/bannerRebajas.jpg" class="d-block w-100" alt="Banner Rebajas">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Productos Rebajas Fila 1-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-3 margen">
+                <!-- figure: encapsula la figura, estructura visualmente el contenido. -->
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/CuelloInfinito.jpg" class="d-block w-100" alt="Cuello infinito">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="81">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <!-- figcaption: proporciona una descripción asociada a la figura -->
+                    <figcaption class="description">Cuello infinito<br>
+                        <span class="precio discount">30% OFF</span><span class="old-price">$&nbsp;16.000</span><span
+                            class="precio new-price">$&nbsp;11.200</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaBásica3.jpg" class="d-block w-100" alt="Bufanda básica">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="82">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda básica<br>
+                        <span class="precio discount">30% OFF</span><span class="old-price">$&nbsp;25.000</span><span
+                            class="precio new-price">$&nbsp;17.500</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaFlecos.jpg" class="d-block w-100" alt="Bufanda con flecos">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="83">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda con flecos<br>
+                        <span class="precio discount">30% OFF</span><span class="old-price">$&nbsp;25.000</span><span
+                            class="precio new-price">$&nbsp;17.500</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaTejida.jpg" class="d-block w-100" alt="Bufanda tejida">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="84">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda tejida<br>
+                        <span class="precio discount">30% OFF</span><span class="old-price">$&nbsp;12.000</span><span
+                            class="precio new-price">$&nbsp;8.400</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 1 -->
+
+
+    <!-- Productos Rebajas Fila 2-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 5 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/GorroTejido1.jpg" class="d-block w-100" alt="Gorro tejido">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="85">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Gorro tejido<br>
+                        <span class="precio discount">30% OFF</span><span class="old-price">$&nbsp;9.000</span><span
+                            class="precio new-price">$&nbsp;6.300</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaFlecos2.jpg" class="d-block w-100" alt="Bufanda con flecos 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="86">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda con flecos<br>
+                        <span class="precio discount">30% OFF</span><span class="old-price">$&nbsp;25.000</span><span
+                            class="precio new-price">$&nbsp;17.500</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 7 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaTextura.jpg" class="d-block w-100" alt="Bufanda con textura">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="87">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda con textura<br>
+                        <span class="precio discount">30% OFF</span><span class="old-price">$&nbsp;25.000</span><span
+                            class="precio new-price">$&nbsp;17.500</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 8 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/GorroPompón2.jpg" class="d-block w-100" alt="Gorro con pompón">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="88">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Gorro con pompón<br>
+                        <span class="precio discount">30% OFF</span><span class="old-price">$&nbsp;10.000</span><span
+                            class="precio new-price">$&nbsp;7.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 2 -->
+
+</div> <!-- Fin Contenedor del sitio -->
+
+<br>
+<br>

@@ -1,0 +1,903 @@
+<!-- Contenido del sitio -->
+<div class="container-fluid content">
+
+    <!-- Banner -->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <div class="col margen">
+                <a href="/accesorios" target="_self">
+                    <img src="Img/BannerAccesorios.jpg" class="d-block w-100" alt="Banner Accesorios">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Productos Accesorios Fila 1-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-3 margen">
+                <!-- figure: encapsula la figura, estructura visualmente el contenido. -->
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/ArosVintage.jpg" class="d-block w-100" alt="Aros cortos vintage">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="17">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Aros cortos vintage<br>
+                        <span class="precio">$&nbsp;4.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/ArgollasDijes.jpg" class="d-block w-100"
+                                alt="Argollas con dijes smileyworld®">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="18">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Argollas con dijes "smileyworld®"<br>
+                        <span class="precio">$&nbsp;4.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/SetPulseras.jpg" class="d-block w-100" alt="Set de pulseras smileyworld®">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="19">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Set de pulseras "smileyworld®"<br>
+                        <span class="precio">$&nbsp;6.200</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/SetChokers.jpg" class="d-block w-100" alt="Set de chokers smileyworld®">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="20">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Set de chokers "smileyworld®"<br>
+                        <span class="precio">$&nbsp;7.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 1 -->
+
+
+    <!-- Productos Accesorios Fila 2-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 5 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/ChokerTextil.jpg" class="d-block w-100" alt="Choker textil">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="21">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Choker textil<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/CollarCorazón.jpg" class="d-block w-100" alt="Collar con dije de corazón">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="22">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Collar con dije de corazón<br>
+                        <span class="precio">$&nbsp;4.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 7 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/PulseraCorazón.jpg" class="d-block w-100" alt="Pulsera con corazón">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="23">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Pulsera con corazón<br>
+                        <span class="precio">$&nbsp;4.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 8 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/ArosDijes.jpg" class="d-block w-100" alt="Aros con dijes circulares">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="24">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Aros con dijes circulares<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 2 -->
+
+    <!-- Productos Accesorios Fila 3-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 9 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BolsoReutilizable.jpg" class="d-block w-100"
+                                alt="Bolso reutilizable con estampa">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="9">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bolso reutilizable con estampa<br>
+                        <span class="precio">$&nbsp;9.900</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 10 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BolsoPlegable.jpg" class="d-block w-100" alt="Bolso plegable">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="10">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bolso plegable<br>
+                        <span class="precio">$&nbsp;25.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 11 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/MochilaPlegable2.jpg" class="d-block w-100" alt="Mochila plegable 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="11">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Mochila plegable<br>
+                        <span class="precio">$&nbsp;21.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 12 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/MochilaPlegable.jpg" class="d-block w-100" alt="Mochila plegable">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="12">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Mochila plegable<br>
+                        <span class="precio">$&nbsp;21.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 3 -->
+
+    <!-- Productos Accesorios Fila 4-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 13 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/PouchCierre.jpg" class="d-block w-100" alt="Pouch con cierre">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="13">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Pouch con cierre<br>
+                        <span class="precio">$&nbsp;18.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 14 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/Bandolera.jpg" class="d-block w-100" alt="Bandolera con cierre">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="14">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bandolera con cierre<br>
+                        <span class="precio">$&nbsp;23.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 15 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/PouchCierre2.jpg" class="d-block w-100" alt="Pouch con cierre 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="15">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Pouch con cierre<br>
+                        <span class="precio">$&nbsp;18.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 16 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/Bandolera2.jpg" class="d-block w-100" alt="Bandolera con cierre 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="16">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bandolera con cierre<br>
+                        <span class="precio">$&nbsp;23.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 4 -->
+
+    <!-- Productos Accesorios Fila 5 -->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 17 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/GomitaFlor.jpg" class="d-block w-100" alt="Gomita de flor de denim">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="25">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Gomita de flor de denim<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 18 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/Scrunchie.jpg" class="d-block w-100" alt="Scrunchie">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="26">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Scrunchie<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 19 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/GomitaFlor2.jpg" class="d-block w-100" alt="Gomita de flor de denim 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="27">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Gomita de flor de denim<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 20 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/ScrunchieXl1.jpg" class="d-block w-100" alt="Scrunchie xl">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="28">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Scrunchie xl<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 5 -->
+
+    <!-- Productos Accesorios Fila 6 -->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 21 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/ScrunchieXl2.jpg" class="d-block w-100" alt="Scrunchie xl 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="29">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Scrunchie xl<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 22 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/SetHorquillas.jpg" class="d-block w-100" alt="Set de horquillas disney">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="30">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Set de horquillas "disney"<br>
+                        <span class="precio">$&nbsp;6.200</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 23 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/SetBroches.jpg" class="d-block w-100" alt="Set de broches disney">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="31">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Set de broches "disney"<br>
+                        <span class="precio">$&nbsp;4.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 24 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BrocheStrass.jpg" class="d-block w-100" alt="Broche con strass">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="32">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Broche con strass<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 6 -->
+
+    <!-- Productos Accesorios Fila 7 -->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 25 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaBásica.jpg" class="d-block w-100" alt="Bufanda básica">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="33">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda básica<br>
+                        <span class="precio">$&nbsp;25.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 26 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaClassic.jpg" class="d-block w-100" alt="Bufanda classic">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="34">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda classic<br>
+                        <span class="precio">$&nbsp;20.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 27 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaBásica2.jpg" class="d-block w-100" alt="Bufanda básica 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="35">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda básica<br>
+                        <span class="precio">$&nbsp;25.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 28 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/CapTachas.jpg" class="d-block w-100" alt="Cap con tachas">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="36">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Cap con tachas<br>
+                        <span class="precio">$&nbsp;9.900</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 7 -->
+
+    <!-- Productos Accesorios Fila 8 -->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 29 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/PilusoEstampa.jpg" class="d-block w-100" alt="Piluso con estampa">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="37">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Piluso con estampa<br>
+                        <span class="precio">$&nbsp;13.900</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 30 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/GorroGatito2.jpg" class="d-block w-100" alt="Gorro de gatito">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="38">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Gorro de gatito<br>
+                        <span class="precio">$&nbsp;9.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 31 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/BufandaClassic2.jpg" class="d-block w-100" alt="Bufanda classic 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="39">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Bufanda classic<br>
+                        <span class="precio">$&nbsp;20.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 32 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/CuelloAcanalado.jpg" class="d-block w-100" alt="Cuello acanalado">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="40">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Cuello acanalado<br>
+                        <span class="precio">$&nbsp;16.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 8 -->
+
+
+</div> <!-- Fin Contenedor del sitio -->
+
+<br>
+<br>

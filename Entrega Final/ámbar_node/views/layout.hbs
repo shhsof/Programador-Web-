@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ambar.css">
+</head>
+
+<body>
+  <!-- Mostrar modal solo en la página principal -->
+  {{#if isIndexPage}}
+  <!-- Modal Suscripción -->
+  <div class="modal fade" id="modalSuscripcion" tabindex="-1" aria-labelledby="modalSuscripcionLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content modalsus">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Img/suscripcion.jpg" class="d-block w-100" alt=""> <br>
+          <h5 class="modal-title" id="modalSuscripcionLabel">¡Suscribite y ganá un 15% OFF! 💌</h5> <br>
+          <p>Sé parte de nuestra comunidad<br> y enterate de todas las<br> novedades 😉</p>
+        </div>
+        <div class="modal-footer">
+          <a href="/suscripcion" target="_self">
+            <button type="button" class="btn btn-primary">Quiero suscribirme</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+  {{/if}}
+
+  <!-- Navbar y otros contenidos comunes -->
+
+  <!-- Navbar -->
+  <nav class="navbar bordesnav bg-body-tertiary" id="navbarBuscador">
+    <div class="container-fluid bordescontainer">
+      <!-- Logo -->
+      <a class="navbar-brand" href="/">
+        <img src="Img/ambar.png" alt="Ámbar" width="100px" height="48px" class="d-inline-block align-text-top">
+      </a>
+
+      <!-- Formulario de búsqueda y Login -->
+      <div class="d-flex ms-auto align-items-center">
+        <!-- Verifica si el usuario está logueado -->
+        {{#if persona}}
+        <!-- Carrito Button -->
+        <a class="navbar-brand" href="/admin/carrito">
+          <button type="button" class="login-icon"><i class="bi bi-cart3"></i></button>
+        </a>
+        <!-- Login Button -->
+        <a class="navbar-brand" href="/admin/carrito">
+          <button type="button" class="login2-icon"><i class="bi bi-person"></i></button>
+        </a>
+        {{else}}
+        <a class="navbar-brand" href="#">
+          <button type="button" class="login-icon"><i class="bi bi-cart3"></i></button>
+        </a>
+        <a class="navbar-brand" href="/admin/login">
+          <button type="button" class="login-icon"><i class="bi bi-person"></i></button>
+        </a>
+        {{/if}}
+        <!-- Formulario de búsqueda -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+          <button class="btn btn-outline-success buscador" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Lista de categorías -->
+  <nav class="navbar bordesnav navbar-expand-lg bg-body-tertiary" id="navbarCategorias">
+    <div class="container-fluid bordescontainer">
+      <button class="navbar-toggler icono" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="bi bi-justify"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/nuevo">NUEVO!</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">ACCESORIOS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/carterasMochilas">CARTERAS Y MOCHILAS</a></li>
+              <li><a class="dropdown-item" href="/bijou">BIJOU</a></li>
+              <li><a class="dropdown-item" href="/accesoriosPelo">ACCESORIOS DE PELO</a></li>
+              <li><a class="dropdown-item" href="/accesoriosTextiles">ACCESORIOS TEXTILES</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/accesorios" style="color: #FC6FB1;">VER TODO</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">BEAUTY
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/skincare">CUIDADO DE LA PIEL</a></li>
+              <li><a class="dropdown-item" href="/makeup">MAKEUP</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/beauty" style="color: #FC6FB1;">VER TODO</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">INFANTIL
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/gorrosPilusos">GORROS Y PILUSOS</a></li>
+              <li><a class="dropdown-item" href="/libreria">LIBRERÍA</a></li>
+              <li><a class="dropdown-item" href="/accesoriosInfantiles">ACCESORIOS INFANTILES</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/theKidsShop" style="color: #FC6FB1;">VER TODO</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/rebajas" style="color: #FC6FB1;">REBAJAS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin Lista de categorías -->
+
+  {{{body}}}
+
+  {{#unless isSuscripcionPage}}
+  <!-- Contenedor de punta a punta(Suscribite al Newsletter) -->
+  <div class="container-fluid mt-5 destacado4">
+    <div class="row">
+      <h4>Suscribite al Newsletter</h4> <br>
+      <br>
+      <p>Completá tus datos y obtené un <span style="font-weight: bold;">15% off</span> en tu próxima compra.</p>
+      <br> <br>
+      <a href="/suscripcion" target="_self">
+        <button type="button" class="btn btn-primary">Suscribirse</button>
+      </a>
+    </div>
+  </div> <!-- Fin Contenedor (Suscribite al Newsletter) -->
+
+
+  <!-- Formulario Contactanos -->
+  <div class="container">
+    <div class="row margen1">
+      <div class="col-8">
+        <h4 class="margen1" style="font-family: montserrat;">Contactanos</h4>
+        <br>
+        <form class="row g-3" action="/" method="post">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control underline-input2" id="nombre" name="nombre">
+          </div>
+          <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control  underline-input2" id="apellido" name="apellido">
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control underline-input2" id="email" name="email"
+              placeholder="ejemplo@email.com">
+          </div>
+          <div class="col-12">
+            <label for="tel" class="form-label">Teléfono </label>
+            <input type="number" class="form-control underline-input2" id="tel" name="tel" placeholder="...">
+          </div>
+          <div class="col-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control underline-input2" id="mensaje" name="mensaje" rows="3"></textarea>
+          </div>
+          <div class="col-10"></div>
+          <div class="col-2 margen1">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+        {{#if message}}
+        <div class="mensaje1">{{message}}</div>
+        {{/if}}
+      </div>
+      <div class="col-1"></div>
+      <div class="col-3">
+        <h5 class="margen1" style="font-family: montserrat;">Atención al cliente</h5>
+        <br>
+        <a class="destacado5" href="https://wa.me">+54 11 3333 - 3333</a>
+        <a class="destacado1" href="https://wa.me" target="_blank">Mensaje de WhatsApp</a>
+        <br>
+        <br>
+        <a class="destacado5" href="mailto:nombre.marca@.com">nombre.marca@gmail.com</a>
+        <a class="destacado1" href="mailto:nombre.marca@.com">Mandanos un mail</a>
+        <br>
+        <br>
+        <h6 class="destacados">Horarios de atención</h6>
+        <p class="destacado1">Lunes a Viernes de 9 a 18 hs, <br>
+          Sábados de 9 a 14 hs
+        </p>
+      </div>
+
+    </div>
+  </div> <!-- Fin Contenedor Contactanos -->
+  {{/unless}}
+  <br>
+
+  <footer></footer>
+
+  <!-- Scripts -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+  <!-- Mostrar modal solo en la página principal -->
+  {{#if isIndexPage}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var ModalSuscripción = new bootstrap.Modal(document.getElementById('modalSuscripcion'), {
+        keyboard: false
+      });
+      ModalSuscripción.show();
+    });
+  </script>
+  {{/if}}
+  <!-- Cambiar el color del Label -->
+  <script>
+    document.querySelectorAll('.underline-input').forEach(input => {
+      input.addEventListener('input', function () {
+        const label = this.previousElementSibling;
+        if (this.value.trim() !== '') {
+          label.classList.add('has-content');
+        } else {
+          label.classList.remove('has-content');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

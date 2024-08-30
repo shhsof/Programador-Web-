@@ -1,0 +1,69 @@
+<!-- Contenido del sitio -->
+<div class="container-fluid content">
+
+    <!-- Contenedor de punta a punta (Localizador de Tiendas) -->
+    <div class="container-fluid mt-5 destacado3">
+        <div class="row">
+            <h2><i class="bi bi-geo-alt"></i></h2>
+            <h2>Localizador de tiendas</h2> <br>
+            <br>
+            <h4>Encontrá tu tienda más cercana</h4>
+            <br> <br>
+        </div>
+    </div> <!-- Fin Contenedor (Localizador de Tiendas) -->
+
+    <!-- Inicio Contenedor Mapa -->
+    <div class="container-fluid margen_tiendas">
+        <div class="row">
+            <!-- Tiendas Ámbar Argentina -->
+            <div class="col-4">
+                <h5 class="tiendas">Tiendas Ámbar Argentina</h5>
+                <div class="locales">
+                    <div class="local"
+                        data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0194309793633!2d-58.41395192427241!3d-34.6036701574956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c80e6c151%3A0x6706ee78c2165c21!2sAv.%20Corrientes%203247%20Local%204%2C%20C1193%20Abasto%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1720671162986!5m2!1ses-419!2sar">
+                        <h5>Abasto</h5>
+                        <p>Av. Corrientes 3247 - local 4, Capital Federal, Capital Federal</p>
+                        <p>+54 11 3333-3333</p>
+                    </div>
+                    <div class="local"
+                        data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.625474474271!2d-58.41326322427323!3d-34.58834205668629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82333ac30d%3A0x5d146007d82f42a4!2sAlto%20Palermo%20Shopping%2C%20Av.%20Sta.%20Fe%203253%20Local%2053%2C%201425%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1720671099644!5m2!1ses-419!2sar">
+                        <h5>Alto Palermo</h5>
+                        <p>Av. Santa Fe 3253 - Local 53, Capital Federal, Capital Federal</p>
+                        <p>+54 11 3333-3333</p>
+                    </div>
+                    <div class="local"
+                        data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6258659773603!2d-58.45877292427443!3d-34.563027055350204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3ea483681%3A0x7af5a9096fc28164!2sAv.%20Cabildo%202004%2C%20C1428AAP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1720671216538!5m2!1ses-419!2sar">
+                        <h5>Cabildo</h5>
+                        <p>Av. Cabildo 2004, Capital Federal, Capital Federal</p>
+                        <p>+54 11 3333-3333</p>
+                    </div>
+
+                </div>
+                <!-- Fin Locales -->
+            </div>
+            <!-- Fin Tiendas Ámbar Argentina -->
+
+            <!-- Mapa Tiendas -->
+            <div class="col-8 mapa">
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0194309793633!2d-58.41395192427241!3d-34.6036701574956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c80e6c151%3A0x6706ee78c2165c21!2sAv.%20Corrientes%203247%20Local%204%2C%20C1193%20Abasto%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1720671162986!5m2!1ses-419!2sar"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <!-- Fin Mapa Tiendas -->
+        </div>
+    </div>
+    <!-- Fin Contenedor Mapa -->
+</div>
+
+<br>
+<br>
+
+<script>
+    // Cambia el mapa según la opción seleccionada
+    document.querySelectorAll('.local').forEach(function (element) {
+        element.addEventListener('click', function () {
+            var mapSrc = this.getAttribute('data-map');
+            document.getElementById('map').src = mapSrc;
+        });
+    });
+</script>

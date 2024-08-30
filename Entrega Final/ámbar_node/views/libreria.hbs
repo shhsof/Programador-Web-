@@ -1,0 +1,239 @@
+<!-- Contenido del sitio -->
+<div class="container-fluid content">
+
+    <!-- Banner -->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row banner">
+            <h4>Librería</h4>
+        </div>
+    </div>
+
+    <!-- Productos Librería Fila 1-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-3 margen">
+                <!-- figure: encapsula la figura, estructura visualmente el contenido. -->
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/CartucheraMinnieMouse.jpg" class="d-block w-100"
+                                alt="Cartuchera de Minnie Mouse">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="65">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Cartuchera de minnie mouse "disney"<br>
+                        <span class="precio">$&nbsp;11.500</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/Set Unicornio.jpg" class="d-block w-100" alt="Set de librería de unicornio">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="66">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Set de librería de unicornio<br>
+                        <span class="precio">$&nbsp;14.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/Juego Gameboy.jpg" class="d-block w-100" alt="Juego Gameboy">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="67">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Juego gameboy<br>
+                        <span class="precio">$&nbsp;3.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/CartucheraCandy.jpg" class="d-block w-100" alt="Cartuchera candy lover">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="68">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Cartuchera candy lover<br>
+                        <span class="precio">$&nbsp;5.000</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 1 -->
+
+    <!-- Productos Librería Fila 2-->
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row">
+            <!-- Producto 5 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/CartucheraGatito.jpg" class="d-block w-100" alt="Cartuchera de gatito">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="69">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Cartuchera de gatito<br>
+                        <span class="precio">$&nbsp;10.500</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/SetLibreríaInfantil1.jpg" class="d-block w-100"
+                                alt="Set de librería infantil">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="70">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Set de librería infantil<br>
+                        <span class="precio">$&nbsp;7.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 7 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/SetLibreríaInfantil2.jpg" class="d-block w-100"
+                                alt="Set de librería infantil 2">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="71">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Set de librería infantil<br>
+                        <span class="precio">$&nbsp;7.700</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- Producto 8 -->
+            <div class="col-3 margen">
+                <figure class="product">
+                    <div class="image-container">
+                        <a href="#" target="_self">
+                            <img src="Img/SetLibreríaInfantil3.jpg" class="d-block w-100"
+                                alt="Set de libreria infantil unicornio">
+                        </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="72">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
+                    </div>
+                    <figcaption class="description">Set de libreria infantil unicornio<br>
+                        <span class="precio">$&nbsp;5.900</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div> <!-- Fin Productos Fila 2 -->
+
+</div> <!-- Fin Contenedor del sitio -->
+
+<br>
+<br>
