@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -51,10 +51,24 @@
 
       <!-- Formulario de búsqueda y Login -->
       <div class="d-flex ms-auto align-items-center">
+        <!-- Verifica si el usuario está logueado -->
+        {{#if persona}}
+        <!-- Carrito Button -->
+        <a class="navbar-brand" href="/admin/carrito">
+          <button type="button" class="login-icon"><i class="bi bi-cart3"></i></button>
+        </a>
         <!-- Login Button -->
+        <a class="navbar-brand" href="/admin/carrito">
+          <button type="button" class="login2-icon"><i class="bi bi-person"></i></button>
+        </a>
+        {{else}}
+        <a class="navbar-brand" href="#">
+          <button type="button" class="login-icon"><i class="bi bi-cart3"></i></button>
+        </a>
         <a class="navbar-brand" href="/admin/login">
           <button type="button" class="login-icon"><i class="bi bi-person"></i></button>
         </a>
+        {{/if}}
         <!-- Formulario de búsqueda -->
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">

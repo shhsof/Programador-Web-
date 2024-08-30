@@ -19,7 +19,19 @@
                         <a href="#" target="_self">
                             <img src="Img/ArosVintage.jpg" class="d-block w-100" alt="Aros cortos vintage">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="17">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Aros cortos vintage<br>
                         <span class="precio">$&nbsp;4.700</span>
@@ -34,7 +46,19 @@
                             <img src="Img/ArgollasDijes.jpg" class="d-block w-100"
                                 alt="Argollas con dijes smileyworld®">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="18">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Argollas con dijes "smileyworld®"<br>
                         <span class="precio">$&nbsp;4.700</span>
@@ -48,7 +72,19 @@
                         <a href="#" target="_self">
                             <img src="Img/SetPulseras.jpg" class="d-block w-100" alt="Set de pulseras smileyworld®">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="19">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Set de pulseras "smileyworld®"<br>
                         <span class="precio">$&nbsp;6.200</span>
@@ -62,7 +98,19 @@
                         <a href="#" target="_self">
                             <img src="Img/SetChokers.jpg" class="d-block w-100" alt="Set de chokers smileyworld®">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="20">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Set de chokers "smileyworld®"<br>
                         <span class="precio">$&nbsp;7.700</span>
@@ -82,7 +130,19 @@
                         <a href="#" target="_self">
                             <img src="Img/ChokerTextil.jpg" class="d-block w-100" alt="Choker textil">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="21">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Choker textil<br>
                         <span class="precio">$&nbsp;3.700</span>
@@ -96,7 +156,19 @@
                         <a href="#" target="_self">
                             <img src="Img/CollarCorazón.jpg" class="d-block w-100" alt="Collar con dije de corazón">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="22">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Collar con dije de corazón<br>
                         <span class="precio">$&nbsp;4.700</span>
@@ -110,7 +182,19 @@
                         <a href="#" target="_self">
                             <img src="Img/PulseraCorazón.jpg" class="d-block w-100" alt="Pulsera con corazón">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="23">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Pulsera con corazón<br>
                         <span class="precio">$&nbsp;4.700</span>
@@ -124,7 +208,19 @@
                         <a href="#" target="_self">
                             <img src="Img/ArosDijes.jpg" class="d-block w-100" alt="Aros con dijes circulares">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="24">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Aros con dijes circulares<br>
                         <span class="precio">$&nbsp;3.700</span>

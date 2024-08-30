@@ -115,6 +115,7 @@ body {
     opacity: 1; /* Hacer el botón opaco */
     z-index: 1;
 }
+
 /* Mostrar la imagen con tonos grises al hacer hover sobre esta */
 .filtro:hover {
     filter: grayscale(20%);
@@ -167,7 +168,6 @@ body {
 }
 
 /* Localizador de Tiendas */
-
 .destacado3 {
     display: flex;
     align-items: center;
@@ -206,7 +206,6 @@ body {
 }
 
 /* Suscribite al Newsletter */
-
 .destacado4 {
     display: flex;
     align-items: center;
@@ -259,13 +258,11 @@ body {
     font-size: 14px;
     font-family: Times, serif;
 }
-.margen1 button,
-.margen1 a{
+.margen1 button{
     background-color: #FC6FB1;
     border: 0px;
 }
-.margen1 button:hover,
-.margen1 a:hover{
+.margen1 button:hover{
     background-color: #ff88bf !important;
 }
 
@@ -458,4 +455,68 @@ body {
     background-color: #ffe5eb !important;
     color: #ff587f !important;
     border-color: #ffc9d2 !important;
+}
+
+
+/* Estilos Carrito de Productos */
+
+/* Carrito2 Botón (a) */
+.margen2 a{
+    background-color: #FC6FB1;
+    border: 0px;
+}
+.margen2 a:hover{
+    background-color: #ff88bf !important;
+}
+
+/* Icono Basura */
+.trash-icon {
+    color: #767676;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.trash-icon:hover {
+    background-color: transparent;
+    color: #5d5d5d;
+}
+
+/* Formato Texto y Fondo de Carrito de Productos */
+.destacado6 h1{
+    display: block !important;
+    margin-bottom: 10px !important;
+    text-decoration: none !important;
+    color: #000000 !important; 
+    font-weight: bold !important;
+}
+.destacado6 h2{
+    display: block !important;
+    margin-bottom: 10px !important;
+    text-decoration: none !important;
+    color: #000000 !important;
+}
+.destacado6 h3{
+    display: block !important;
+    margin-bottom: 10px !important;
+    text-decoration: none !important;
+    color: #f763a8 !important;
+}
+
+.destacados6 h3{
+    display: block !important;
+    margin-bottom: 10px !important;
+    text-decoration: none !important;
+    color: #000000 !important;
+}
+/* Botón Cantidades */
+.margens1 button{
+    color: #000;
+    background-color: transparent !important;
+    border: 0px;
+}
+.margens1 button:hover{
+    color: rgb(61, 61, 61);
+    background-color: transparent !important;
 }

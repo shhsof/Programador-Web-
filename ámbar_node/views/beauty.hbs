@@ -23,7 +23,19 @@
                         <a href="#" target="_self">
                             <img src="Img/PaletaSombras.jpg" class="d-block w-100" alt="Paleta de sombras para ojos">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="49">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Paleta de sombras para ojos "preppy cool"<br>
                         <span class="precio">$&nbsp;14.500</span>
@@ -37,7 +49,19 @@
                         <a href="#" target="_self">
                             <img src="Img/PaletaSombras2.jpg" class="d-block w-100" alt="Paleta de sombras para ojos 2">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="50">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Paleta de sombras para ojos "preppy cool"<br>
                         <span class="precio">$&nbsp;11.900</span>
@@ -51,7 +75,19 @@
                         <a href="#" target="_self">
                             <img src="Img/GelCejas.jpg" class="d-block w-100" alt="Gel de cejas">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="51">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Gel de cejas<br>
                         <span class="precio">$&nbsp;6.200</span>
@@ -65,7 +101,19 @@
                         <a href="#" target="_self">
                             <img src="Img/MáscaraPestañas.jpg" class="d-block w-100" alt="Máscara de pestañas y cejas">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="52">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Máscara de pestañas y cejas "natural lash"<br>
                         <span class="precio">$&nbsp;7.700</span>
@@ -85,7 +133,19 @@
                         <a href="#" target="_self">
                             <img src="Img/ÓleoLabios.jpg" class="d-block w-100" alt="Óleo para labios">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="53">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Óleo para labios "#oil i ever wanted"<br>
                         <span class="precio">$&nbsp;7.700</span>
@@ -99,7 +159,19 @@
                         <a href="#" target="_self">
                             <img src="Img/Delineador.jpg" class="d-block w-100" alt="Delineador de ojos en gel negro">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="54">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Delineador de ojos en gel negro<br>
                         <span class="precio">$&nbsp;4.700</span>
@@ -114,7 +186,19 @@
                             <img src="Img/MáscaraPestañas2.jpg" class="d-block w-100"
                                 alt="Máscara para pestañas extra volumen">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="55">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Máscara para pestañas extra volumen<br>
                         <span class="precio">$&nbsp;7.700</span>
@@ -129,7 +213,19 @@
                             <img src="Img/LipOil.jpg" class="d-block w-100"
                                 alt="Lip oil hidratante y nutritivo efecto glossy">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="56">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Lip oil hidratante y nutritivo efecto glossy<br>
                         <span class="precio">$&nbsp;7.700</span>
@@ -150,7 +246,19 @@
                             <img src="Img/SérumHidratante.jpg" class="d-block w-100"
                                 alt="Sérum hidratante para labios #lipcare">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="41">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Sérum hidratante para labios #lipcare<br>
                         <span class="precio">$&nbsp;6.200</span>
@@ -164,7 +272,19 @@
                         <a href="#" target="_self">
                             <img src="Img/SetPinzas.jpg" class="d-block w-100" alt="Set de mini pinzas">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="42">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Set de mini pinzas<br>
                         <span class="precio">$&nbsp;3.700</span>
@@ -178,7 +298,19 @@
                         <a href="#" target="_self">
                             <img src="Img/PrimerHidratante.jpg" class="d-block w-100" alt="Primer hidratante">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="43">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Primer hidratante<br>
                         <span class="precio">$&nbsp;4.700</span>
@@ -192,7 +324,19 @@
                         <a href="#" target="_self">
                             <img src="Img/PrimerMatificante.jpg" class="d-block w-100" alt="Primer matificante de base">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="44">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Primer matificante de base "#skinsaver<br>
                         <span class="precio">$&nbsp;9.900</span>
@@ -213,7 +357,19 @@
                             <img src="Img/SerumHumectante.jpg" class="d-block w-100"
                                 alt="Serum humectante vol. 1 acf by dadatina">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="45">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Serum humectante vol. 1 acf by dadatina<br>
                         <span class="precio">$&nbsp;20.900</span>
@@ -227,7 +383,19 @@
                         <a href="#" target="_self">
                             <img src="Img/Fotoprotector.jpg" class="d-block w-100" alt="Fotoprotector acf by dadatina">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="46">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Fotoprotector acf by dadatina<br>
                         <span class="precio">$&nbsp;25.700</span>
@@ -242,7 +410,19 @@
                             <img src="Img/BrumaReparadora.jpg" class="d-block w-100"
                                 alt="Bruma reparadora acf by dadatina">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="47">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Bruma reparadora acf by dadatina<br>
                         <span class="precio">$&nbsp;17.900</span>
@@ -254,9 +434,21 @@
                 <figure class="product">
                     <div class="image-container">
                         <a href="#" target="_self">
-                            <img src="Img/TónicoExfoliante.jpg" class="d-block w-100" alt="Tónico exfoliante">
+                            <img src="Img/TonicoExfoliante.jpg" class="d-block w-100" alt="Tónico exfoliante">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="48">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Tónico exfoliante "oh my skin hero"<br>
                         <span class="precio">$&nbsp;7.700</span>

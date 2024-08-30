@@ -11,7 +11,7 @@ var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 
-var adminRouter = require('./routes/admin/novedades');
+var carritoRouter = require('./routes/admin/carrito'); // Actualizado a 'carrito'
 const async = require('hbs/lib/async');
 
 var app = express();
@@ -30,20 +30,42 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: '12w45qe1qe4q1eq54eq5',
   resave: false,
-  saveUninitialized: true
-}))
+  saveUninitialized: false,
+  cookie: {
+    maxAge: 1000 * 60 * 60 * 24, // 24 horas
+    secure: false,
+    httpOnly: true,
+  }
+}));
+
+// Middleware para hacer la sesión accesible en todas las vistas
+app.use((req, res, next) => {
+  res.locals.session = req.session;
+  next();
+});
+// Middleware para verificar si el usuario está logueado
+app.use((req, res, next) => {
+  res.locals.userLoggedIn = req.session && req.session.userId ? true : false;
+  next();
+});
+
+app.use((req, res, next) => {
+  console.log('Sesión actual:', req.session);
+  next();
+});
+
 
 // Middleware para proteger rutas
 secured = async (req, res, next) => {
   try {
-      console.log(req.session.id_usuario);
-      if (req.session.id_usuario) {
-        next();
-      } else {
-          res.redirect('/admin/login')
-      } //cierre else
+    console.log(req.session.id_usuario);
+    if (req.session && req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login')
+    } //cierre else
   } catch (error) {
-      console.log(error);
+    console.log(error);
   }
 }
 
@@ -51,15 +73,15 @@ secured = async (req, res, next) => {
 app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminRouter);
+app.use('/admin/carrito', secured, carritoRouter); // Actualizado a 'carrito'
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

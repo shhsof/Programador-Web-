@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -24,16 +24,24 @@
             </a>
             <!-- Formulario de búsqueda y Login -->
             <div class="d-flex ms-auto align-items-center">
+                <!-- Verifica si el usuario está logueado -->
+                {{#if persona}}
+                <!-- Carrito Button -->
+                <a class="navbar-brand" href="/admin/carrito">
+                    <button type="button" class="login-icon"><i class="bi bi-cart3"></i></button>
+                </a>
                 <!-- Login Button -->
-                {{#if persona}} <!-- Verifica si el usuario está logueado -->
-                <a class="navbar-brand" href="/admin/novedades">
+                <a class="navbar-brand" href="/admin/carrito">
                     <button type="button" class="login2-icon"><i class="bi bi-person"></i></button>
                 </a>
                 {{else}}
-                <a class="navbar-brand" href="/admin/login">
-                <button type="button" class="login-icon"><i class="bi bi-person"></i></button>
+                <a class="navbar-brand" href="#">
+                    <button type="button" class="login-icon"><i class="bi bi-cart3"></i></button>
                 </a>
-            {{/if}}
+                <a class="navbar-brand" href="/admin/login">
+                    <button type="button" class="login-icon"><i class="bi bi-person"></i></button>
+                </a>
+                {{/if}}
                 <!-- Formulario de búsqueda -->
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
@@ -119,6 +127,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Cambiar el color del Label -->
     <script>
         document.querySelectorAll('.underline-input').forEach(input => {

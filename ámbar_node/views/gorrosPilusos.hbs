@@ -19,7 +19,19 @@
                         <a href="#" target="_self">
                             <img src="Img/Cap Minnie.jpg" class="d-block w-100" alt="Cap Minnie">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="57">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Cap de minnie mouse "disney"<br>
                         <span class="precio">$&nbsp;11.900</span>
@@ -34,7 +46,19 @@
                         <a href="#" target="_self">
                             <img src="Img/Piluso Minnie.jpg" class="d-block w-100" alt="Piluso Minnie">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="58">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Piluso de minnie mouse "disney"<br>
                         <span class="precio">$&nbsp;15.900</span>
@@ -48,7 +72,19 @@
                         <a href="#" target="_self">
                             <img src="Img/GorroTejido.jpg" class="d-block w-100" alt="Gorro Infantil Tejido">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="59">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Gorro Infantil Tejido<br>
                         <span class="precio">$&nbsp;6.000</span>
@@ -62,7 +98,19 @@
                         <a href="#" target="_self">
                             <img src="Img/CapMinnie Mouse2.jpg" class="d-block w-100" alt="Cap de Minnie Mouse">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="60">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Cap de minnie mouse "disney"<br>
                         <span class="precio">$&nbsp;11.900</span>
@@ -82,7 +130,19 @@
                         <a href="#" target="_self">
                             <img src="Img/CapMinnieMouse3.jpg" class="d-block w-100" alt="Cap de Minnie Mouse">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="61">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Cap de minnie mouse "disney"<br>
                         <span class="precio">$&nbsp;11.900</span>
@@ -97,7 +157,19 @@
                             <img src="Img/pilusoInfantil.jpg" class="d-block w-100"
                                 alt="Piluso infantil con animalitos">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="62">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Piluso infantil con animalitos<br>
                         <span class="precio">$&nbsp;13.900</span>
@@ -111,7 +183,19 @@
                         <a href="#" target="_self">
                             <img src="Img/CapGatito.jpg" class="d-block w-100" alt="Cap de gatito">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="63">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Cap de gatito<br>
                         <span class="precio">$&nbsp;9.900</span>
@@ -125,7 +209,19 @@
                         <a href="#" target="_self">
                             <img src="Img/GorroPompón.jpg" class="d-block w-100" alt="Gorro con pompón">
                         </a>
+                        {{#if persona}}
+                        <!-- Si el usuario está logueado añadir al carrito -->
+                        <form action="/admin/carrito/agregar" method="POST">
+                            <input type="hidden" name="id_producto" value="64">
+                            <input type="hidden" name="cantidad" value="1">
+                            <button type="submit" class="add-to-cart">Añadir al carrito</button>
+                        </form>
+                        {{else}}
+                        <!-- Si no está logueado redirigir al login -->
+                        <a href="/admin/login" target="_self">
                         <button class="add-to-cart">Añadir al carrito</button>
+                        </a>
+                        {{/if}}
                     </div>
                     <figcaption class="description">Gorro con pompón<br>
                         <span class="precio">$&nbsp;10.000</span>

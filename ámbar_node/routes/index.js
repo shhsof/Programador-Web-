@@ -7,7 +7,13 @@ var nodemailer = require('nodemailer')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Ámbar', isIndexPage: true, isSuscripcionPage: false });
+  res.render('index', {
+    layout: '/layout',
+    title: 'Ámbar',
+    persona: req.session.nombre,
+    isIndexPage: true,
+    isSuscripcionPage: false
+});
 });
 
 /* POST contacto */
@@ -23,7 +29,7 @@ router.post('/', async (req, res, next) => {
   var obj = {
     to: 'sofiang04@gmail.com',
     subject: 'Contacto desde la web',
-    html: `${nombre} ${apellido} se contactó a través de la web y quiere más info a este correo: ${email} <br> Además, hizo el siguiente comentario: ${mensaje} . <br> Su tel es ${telefono}`
+    html: `${nombre} ${apellido} se contactó a través de la web y quiere más info a este correo: ${email} <br> Además, hizo el siguiente comentario: ${mensaje} . <br> Su teléfono es ${telefono}`
   }; // cierra var obj
 
   var transporter = nodemailer.createTransport({
@@ -90,71 +96,173 @@ router.post('/suscripcion', async (req, res, next) => {
 /* GET otras páginas. */
 
 router.get('/beauty', function (req, res, next) {
-  res.render('beauty', { title: 'Beauty', isIndexPage: false, isSuscripcionPage: false });
+  res.render('beauty', {
+    layout: '/layout',
+    title: 'Beauty',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/smileyWorld', function (req, res, next) {
-  res.render('smileyWorld', { title: 'Smiley World', isIndexPage: false, isSuscripcionPage: false });
+  res.render('smileyWorld', {
+    layout: '/layout',
+    title: 'Smiley World',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/theKidsShop', function (req, res, next) {
-  res.render('theKidsShop', { title: 'The Kids Shop', isIndexPage: false, isSuscripcionPage: false });
+  res.render('theKidsShop', {
+    layout: '/layout',
+    title: 'The Kids Shop',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/accesorios', function (req, res, next) {
-  res.render('accesorios', { title: 'Accesorios', isIndexPage: false, isSuscripcionPage: false });
+  res.render('accesorios', {
+    layout: '/layout',
+    title: 'Accesorios',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/accesoriosPelo', function (req, res, next) {
-  res.render('accesoriosPelo', { title: 'Accesorios de Pelo', isIndexPage: false, isSuscripcionPage: false });
+  res.render('accesoriosPelo', {
+    layout: '/layout',
+    title: 'Accesorios de Pelo',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/accesoriosTextiles', function (req, res, next) {
-  res.render('accesoriosTextiles', { title: 'Accesorios Textiles', isIndexPage: false, isSuscripcionPage: false });
+  res.render('accesoriosTextiles', {
+    layout: '/layout',
+    title: 'Accesorios Textiles',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/bijou', function (req, res, next) {
-  res.render('bijou', { title: 'Bijou', isIndexPage: false, isSuscripcionPage: false });
+  res.render('bijou', {
+    layout: '/layout',
+    title: 'Bijou',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/carterasMochilas', function (req, res, next) {
-  res.render('carterasMochilas', { title: 'Carteras y Mochilas', isIndexPage: false, isSuscripcionPage: false });
+  res.render('carterasMochilas', {
+    layout: '/layout',
+    title: 'Carteras y Mochilas',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/makeup', function (req, res, next) {
-  res.render('makeup', { title: 'Makeup', isIndexPage: false, isSuscripcionPage: false });
+  res.render('makeup', {
+    layout: '/layout',
+    title: 'Makeup',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/nuevo', function (req, res, next) {
-  res.render('nuevo', { title: 'Nuevo', isIndexPage: false, isSuscripcionPage: false });
+  res.render('nuevo', {
+    layout: '/layout',
+    title: 'Nuevo',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/rebajas', function (req, res, next) {
-  res.render('rebajas', { title: 'Rebajas', isIndexPage: false, isSuscripcionPage: false });
+  res.render('rebajas', {
+    layout: '/layout',
+    title: 'Rebajas',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});  
 });
 
 router.get('/skincare', function (req, res, next) {
-  res.render('skincare', { title: 'Skincare', isIndexPage: false, isSuscripcionPage: false });
+  res.render('skincare', {
+    layout: '/layout',
+    title: 'Skincare',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/suscripcion', function (req, res, next) {
-  res.render('suscripcion', { title: 'Suscripción', isIndexPage: false, isSuscripcionPage: true });
+  res.render('suscripcion', {
+    layout: '/layout',
+    title: 'Suscripción',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: true
+});
 });
 
 router.get('/tiendas', function (req, res, next) {
-  res.render('tiendas', { title: 'Tiendas', isIndexPage: false, isSuscripcionPage: false });
+  res.render('tiendas', {
+    layout: '/layout',
+    title: 'Tiendas',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/accesoriosInfantiles', function (req, res, next) {
-  res.render('accesoriosInfantiles', { title: 'Accesorios Infantiles', isIndexPage: false, isSuscripcionPage: false });
+  res.render('accesoriosInfantiles', {
+    layout: '/layout',
+    title: 'Accesorios Infantiles',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/gorrosPilusos', function (req, res, next) {
-  res.render('gorrosPilusos', { title: 'Gorros y Pilusos', isIndexPage: false, isSuscripcionPage: false });
+  res.render('gorrosPilusos', {
+    layout: '/layout',
+    title: 'Gorros y Pilusos',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 router.get('/libreria', function (req, res, next) {
-  res.render('libreria', { title: 'Librería', isIndexPage: false, isSuscripcionPage: false });
+  res.render('libreria', {
+    layout: '/layout',
+    title: 'Librería',
+    persona: req.session.nombre,
+    isIndexPage: false,
+    isSuscripcionPage: false
+});
 });
 
 module.exports = router;
